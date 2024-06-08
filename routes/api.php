@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SupplyController;
 use App\Http\Controllers\Api\StoreController;
 
 /*
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('stores', StoreController::class);  
+Route::apiResource('supply', SupplyController::class); 
